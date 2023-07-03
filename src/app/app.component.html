@@ -13,10 +13,8 @@
 <!--------------------->
 
 <!-- Conditional content projection -->
-<app-conditional-content-projection>
-  <ng-template appColor>
-    It depends on what you do with it.
-  </ng-template>
+<app-conditional-content-projection [check]="true">
+  <p hello>Conditional content projection</p>
 </app-conditional-content-projection>
 
 <!--------------------->

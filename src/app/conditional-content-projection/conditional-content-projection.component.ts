@@ -1,4 +1,4 @@
-import { Component, ContentChild } from '@angular/core';
+import { Component, ContentChild, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ColorDirective } from '../color.directive';
 
@@ -10,5 +10,8 @@ import { ColorDirective } from '../color.directive';
   styleUrls: ['./conditional-content-projection.component.sass']
 })
 export class ConditionalContentProjectionComponent {
-  @ContentChild(ColorDirective) content!: ColorDirective;
+
+  @Input() check?: boolean;
+
+  expanded = true;
 }

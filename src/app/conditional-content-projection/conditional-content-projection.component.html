@@ -1,3 +1,6 @@
 <!-- <p>conditional-content-projection works!</p> -->
-<p>Hello</p>
-<ng-container [ngTemplateOutlet]="content.templateRef"></ng-container>
+<ng-content></ng-content>
+<div *ngIf="check">
+    <ng-content select="[hello]"></ng-content>
+</div>
+

@@ -6,7 +6,7 @@ import { Directive, ElementRef, HostListener, TemplateRef } from '@angular/core'
 })
 export class ColorDirective {
 
-  constructor(private readonly el: ElementRef, public templateRef: TemplateRef<unknown>) {
+  constructor(private readonly el: ElementRef) {
   }
 
   @HostListener('mouseenter') onMouseEnter() {
